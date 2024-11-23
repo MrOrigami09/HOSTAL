@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jemde\\source\\repos\\waSemana13\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{67047C63-FEBC-411C-9C7C-9B5AEBBBAC0E}|waSemana13\\waSemana13.csproj|c:\\users\\jemde\\source\\repos\\wasemana13\\wasemana13\\views\\medicos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{67047C63-FEBC-411C-9C7C-9B5AEBBBAC0E}|waSemana13\\waSemana13.csproj|solutionrelative:wasemana13\\views\\medicos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67047C63-FEBC-411C-9C7C-9B5AEBBBAC0E}|waSemana13\\waSemana13.csproj|c:\\users\\jemde\\source\\repos\\wasemana13\\wasemana13\\controllers\\medicoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67047C63-FEBC-411C-9C7C-9B5AEBBBAC0E}|waSemana13\\waSemana13.csproj|solutionrelative:wasemana13\\controllers\\medicoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67047C63-FEBC-411C-9C7C-9B5AEBBBAC0E}|waSemana13\\waSemana13.csproj|c:\\users\\jemde\\source\\repos\\wasemana13\\wasemana13\\controllers\\paiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67047C63-FEBC-411C-9C7C-9B5AEBBBAC0E}|waSemana13\\waSemana13.csproj|solutionrelative:wasemana13\\controllers\\paiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 139,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MedicosController.cs",
+              "DocumentMoniker": "C:\\Users\\jemde\\source\\repos\\waSemana13\\waSemana13\\Controllers\\MedicosController.cs",
+              "RelativeDocumentMoniker": "waSemana13\\Controllers\\MedicosController.cs",
+              "ToolTip": "C:\\Users\\jemde\\source\\repos\\waSemana13\\waSemana13\\Controllers\\MedicosController.cs",
+              "RelativeToolTip": "waSemana13\\Controllers\\MedicosController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwB0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T01:51:28.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jemde\\source\\repos\\waSemana13\\waSemana13\\Views\\Medicos\\Index.cshtml",
+              "RelativeDocumentMoniker": "waSemana13\\Views\\Medicos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jemde\\source\\repos\\waSemana13\\waSemana13\\Views\\Medicos\\Index.cshtml",
+              "RelativeToolTip": "waSemana13\\Views\\Medicos\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T01:51:24.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PaisController.cs",
+              "DocumentMoniker": "C:\\Users\\jemde\\source\\repos\\waSemana13\\waSemana13\\Controllers\\PaisController.cs",
+              "RelativeDocumentMoniker": "waSemana13\\Controllers\\PaisController.cs",
+              "ToolTip": "C:\\Users\\jemde\\source\\repos\\waSemana13\\waSemana13\\Controllers\\PaisController.cs",
+              "RelativeToolTip": "waSemana13\\Controllers\\PaisController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T00:46:48.015Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

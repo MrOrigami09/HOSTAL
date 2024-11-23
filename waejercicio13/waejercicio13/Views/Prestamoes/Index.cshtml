@@ -1,0 +1,70 @@
+﻿@model IEnumerable<waejercicio13.Prestamo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Index</h2>
+
+<!-- Formulario para el rango de fechas -->
+@using (Html.BeginForm("Index", "Prestamos", FormMethod.Get))
+{
+    <div class="form-group">
+        @Html.Label("Fecha de inicio", htmlAttributes: new { @class = "control-label" })
+        @Html.TextBox("fechaInicio", null, new { @class = "form-control", type = "date" })
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Fecha de fin", htmlAttributes: new { @class = "control-label" })
+        @Html.TextBox("fechaFin", null, new { @class = "form-control", type = "date" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Buscar</button>
+}
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaPrestamo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaDevolucion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estudiante.Nombres)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Libro.Titulo)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @String.Format("{0:yyyy-MM-dd}", item.FechaPrestamo) <!-- Formato solo de fecha -->
+            </td>
+            <td>
+                @String.Format("{0:yyyy-MM-dd}", item.FechaDevolucion) <!-- Formato solo de fecha -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estudiante.Nombres)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Libro.Titulo)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Editar", new { id = item.CodPrestamo }) |
+                @Html.ActionLink("Detalles", "Detalles", new { id = item.CodPrestamo }) |
+                @Html.ActionLink("Borrar", "Borrar", new { id = item.CodPrestamo })
+            </td>
+        </tr>
+    }
+
+
+</table>

@@ -1,0 +1,50 @@
+﻿@model waejercicio13.Prestamo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Prestamo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaPrestamo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaPrestamo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDevolucion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDevolucion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estudiante.Nombres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estudiante.Nombres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Libro.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Libro.Titulo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CodPrestamo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

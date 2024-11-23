@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TClinicaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Especialidad">
+    <Key>
+      <PropertyRef Name="IdEspecialidad" />
+    </Key>
+    <Property Name="IdEspecialidad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Medico" Relationship="Self.FK_Medico_Especialidad" FromRole="Especialidad" ToRole="Medico" />
+  </EntityType>
+  <EntityType Name="Medico">
+    <Key>
+      <PropertyRef Name="IdMedico" />
+    </Key>
+    <Property Name="IdMedico" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NumeroColegiatura" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DNI" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Genero" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="IdEspecialidad" Type="Int32" Nullable="false" />
+    <Property Name="IdPais" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Especialidad" Relationship="Self.FK_Medico_Especialidad" FromRole="Medico" ToRole="Especialidad" />
+    <NavigationProperty Name="Pais" Relationship="Self.FK_Medico_Pais" FromRole="Medico" ToRole="Pais" />
+  </EntityType>
+  <EntityType Name="Pais">
+    <Key>
+      <PropertyRef Name="IdPais" />
+    </Key>
+    <Property Name="IdPais" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Medico" Relationship="Self.FK_Medico_Pais" FromRole="Pais" ToRole="Medico" />
+  </EntityType>
+  <Association Name="FK_Medico_Especialidad">
+    <End Role="Especialidad" Type="Self.Especialidad" Multiplicity="1" />
+    <End Role="Medico" Type="Self.Medico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Especialidad">
+        <PropertyRef Name="IdEspecialidad" />
+      </Principal>
+      <Dependent Role="Medico">
+        <PropertyRef Name="IdEspecialidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Medico_Pais">
+    <End Role="Pais" Type="Self.Pais" Multiplicity="1" />
+    <End Role="Medico" Type="Self.Medico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pais">
+        <PropertyRef Name="IdPais" />
+      </Principal>
+      <Dependent Role="Medico">
+        <PropertyRef Name="IdPais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TClinicaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Especialidad" EntityType="Self.Especialidad" />
+    <EntitySet Name="Medico" EntityType="Self.Medico" />
+    <EntitySet Name="Pais" EntityType="Self.Pais" />
+    <AssociationSet Name="FK_Medico_Especialidad" Association="Self.FK_Medico_Especialidad">
+      <End Role="Especialidad" EntitySet="Especialidad" />
+      <End Role="Medico" EntitySet="Medico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Medico_Pais" Association="Self.FK_Medico_Pais">
+      <End Role="Pais" EntitySet="Pais" />
+      <End Role="Medico" EntitySet="Medico" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

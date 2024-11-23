@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jemde\\source\\repos\\wasejercicios13\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{652985E0-A608-4782-B3FC-F955B6C15BEC}|wasejercicios13\\wasejercicios13.csproj|c:\\users\\jemde\\source\\repos\\wasejercicios13\\wasejercicios13\\views\\estudiantes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{652985E0-A608-4782-B3FC-F955B6C15BEC}|wasejercicios13\\wasejercicios13.csproj|solutionrelative:wasejercicios13\\views\\estudiantes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{652985E0-A608-4782-B3FC-F955B6C15BEC}|wasejercicios13\\wasejercicios13.csproj|c:\\users\\jemde\\source\\repos\\wasejercicios13\\wasejercicios13\\controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{652985E0-A608-4782-B3FC-F955B6C15BEC}|wasejercicios13\\wasejercicios13.csproj|solutionrelative:wasejercicios13\\controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{652985E0-A608-4782-B3FC-F955B6C15BEC}|wasejercicios13\\wasejercicios13.csproj|c:\\users\\jemde\\source\\repos\\wasejercicios13\\wasejercicios13\\views\\libroes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{652985E0-A608-4782-B3FC-F955B6C15BEC}|wasejercicios13\\wasejercicios13.csproj|solutionrelative:wasejercicios13\\views\\libroes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{652985E0-A608-4782-B3FC-F955B6C15BEC}|wasejercicios13\\wasejercicios13.csproj|c:\\users\\jemde\\source\\repos\\wasejercicios13\\wasejercicios13\\controllers\\libroescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{652985E0-A608-4782-B3FC-F955B6C15BEC}|wasejercicios13\\wasejercicios13.csproj|solutionrelative:wasejercicios13\\controllers\\libroescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 139,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jemde\\source\\repos\\wasejercicios13\\wasejercicios13\\Views\\Estudiantes\\Index.cshtml",
+              "RelativeDocumentMoniker": "wasejercicios13\\Views\\Estudiantes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jemde\\source\\repos\\wasejercicios13\\wasejercicios13\\Views\\Estudiantes\\Index.cshtml",
+              "RelativeToolTip": "wasejercicios13\\Views\\Estudiantes\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T02:55:57.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EstudiantesController.cs",
+              "DocumentMoniker": "C:\\Users\\jemde\\source\\repos\\wasejercicios13\\wasejercicios13\\Controllers\\EstudiantesController.cs",
+              "RelativeDocumentMoniker": "wasejercicios13\\Controllers\\EstudiantesController.cs",
+              "ToolTip": "C:\\Users\\jemde\\source\\repos\\wasejercicios13\\wasejercicios13\\Controllers\\EstudiantesController.cs",
+              "RelativeToolTip": "wasejercicios13\\Controllers\\EstudiantesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T02:55:47.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jemde\\source\\repos\\wasejercicios13\\wasejercicios13\\Views\\Libroes\\Index.cshtml",
+              "RelativeDocumentMoniker": "wasejercicios13\\Views\\Libroes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jemde\\source\\repos\\wasejercicios13\\wasejercicios13\\Views\\Libroes\\Index.cshtml",
+              "RelativeToolTip": "wasejercicios13\\Views\\Libroes\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T02:51:38.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LibroesController.cs",
+              "DocumentMoniker": "C:\\Users\\jemde\\source\\repos\\wasejercicios13\\wasejercicios13\\Controllers\\LibroesController.cs",
+              "RelativeDocumentMoniker": "wasejercicios13\\Controllers\\LibroesController.cs",
+              "ToolTip": "C:\\Users\\jemde\\source\\repos\\wasejercicios13\\wasejercicios13\\Controllers\\LibroesController.cs",
+              "RelativeToolTip": "wasejercicios13\\Controllers\\LibroesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T02:51:16.913Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

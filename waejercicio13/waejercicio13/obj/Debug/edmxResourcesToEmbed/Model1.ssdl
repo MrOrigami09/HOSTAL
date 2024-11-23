@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BD_BIBLIOTECAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Estudiante">
+    <Key>
+      <PropertyRef Name="CodAlumno" />
+    </Key>
+    <Property Name="CodAlumno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombres" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Apellidos" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Libro">
+    <Key>
+      <PropertyRef Name="ISBN" />
+    </Key>
+    <Property Name="ISBN" Type="char" MaxLength="13" Nullable="false" />
+    <Property Name="Titulo" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Autor" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Editorial" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="NroPaginas" Type="int" Nullable="false" />
+    <Property Name="Stock" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Prestamo">
+    <Key>
+      <PropertyRef Name="CodPrestamo" />
+    </Key>
+    <Property Name="CodPrestamo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ISBN" Type="char" MaxLength="13" Nullable="false" />
+    <Property Name="CodAlumno" Type="int" Nullable="false" />
+    <Property Name="FechaPrestamo" Type="date" Nullable="false" />
+    <Property Name="FechaDevolucion" Type="date" />
+  </EntityType>
+  <Association Name="FK__Prestamo__CodAlu__619B8048">
+    <End Role="Estudiante" Type="Self.Estudiante" Multiplicity="1" />
+    <End Role="Prestamo" Type="Self.Prestamo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estudiante">
+        <PropertyRef Name="CodAlumno" />
+      </Principal>
+      <Dependent Role="Prestamo">
+        <PropertyRef Name="CodAlumno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Prestamo__ISBN__60A75C0F">
+    <End Role="Libro" Type="Self.Libro" Multiplicity="1" />
+    <End Role="Prestamo" Type="Self.Prestamo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Libro">
+        <PropertyRef Name="ISBN" />
+      </Principal>
+      <Dependent Role="Prestamo">
+        <PropertyRef Name="ISBN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BD_BIBLIOTECAModelStoreContainer">
+    <EntitySet Name="Estudiante" EntityType="Self.Estudiante" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Libro" EntityType="Self.Libro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Prestamo" EntityType="Self.Prestamo" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Prestamo__CodAlu__619B8048" Association="Self.FK__Prestamo__CodAlu__619B8048">
+      <End Role="Estudiante" EntitySet="Estudiante" />
+      <End Role="Prestamo" EntitySet="Prestamo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Prestamo__ISBN__60A75C0F" Association="Self.FK__Prestamo__ISBN__60A75C0F">
+      <End Role="Libro" EntitySet="Libro" />
+      <End Role="Prestamo" EntitySet="Prestamo" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
